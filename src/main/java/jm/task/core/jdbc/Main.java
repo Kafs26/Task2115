@@ -9,7 +9,6 @@ public class Main {
     public static void main(String[] args) {
        // Util.getDataBaseConnection();
         UserDao userDao = new UserDaoJDBCImpl();
-
         userDao.createUsersTable();
 //
 //        userDao.saveUser("Name1", "LastName1", (byte) 20);

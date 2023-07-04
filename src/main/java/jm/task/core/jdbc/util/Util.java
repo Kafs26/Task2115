@@ -6,11 +6,12 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Environment;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
+
 import java.util.Properties;
 
 public class Util {
     private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
-    private static final String URL = "jdbc:mysql://localhost:3306/users?autoReconnect=true&useSSL=false";
+    private static final String URL = "jdbc:mysql://localhost:3306/users?useSSL=false";
     private static final String USERNAME = "root";
     private static final String PASSWORD = "1KataSQL!";
 
@@ -50,22 +51,5 @@ public class Util {
         getSessionFactory().close();
     }
 
-
 }
-
-
-//    public static Connection getDataBaseConnection() {
-//       Connection connection = null;
-//        try {
-//            Driver driver = new com.mysql.cj.jdbc.Driver();
-//            DriverManager.registerDriver(driver);
-//            connection = DriverManager.getConnection(URl, USERNAME, PASSWORD);
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//        return connection;
-//    }
-//}
-
-
 

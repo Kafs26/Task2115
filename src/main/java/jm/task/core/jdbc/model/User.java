@@ -5,19 +5,19 @@ import java.util.Objects;
 
 
 @Entity
-@Table (name = "USERS")
+@Table (name = "users")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column (name = "NAME")
+    @Column (name = "name")
     private String name;
 
-    @Column (name = "LASTNAME")
+    @Column (name = "lastname")
     private String lastName;
 
-    @Column (name = "AGE")
+    @Column (name = "age")
     private Byte age;
 
     public User() {
